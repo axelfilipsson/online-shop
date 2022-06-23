@@ -33,7 +33,7 @@ export default function Home() {
             transition={{  type: "spring", default: { duration: 0.5 }, }}>
 
             <Gallery>
-              {products.map((product) => <Product product={product} />)}
+              {products.map((product) => <Product key={product.attributes.slug} product={product} />)}
             </Gallery>
           </motion.main>
 
