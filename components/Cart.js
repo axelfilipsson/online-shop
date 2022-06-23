@@ -25,7 +25,7 @@ const cards = {
 
 
  
-export default function () {
+export default function Cart() {
 
     const handleCheckout = async () => {
         const stripe = await getStripe()
