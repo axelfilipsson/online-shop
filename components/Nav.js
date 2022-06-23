@@ -16,7 +16,7 @@ export default function Nav() {
 
 
             < Link href={'/'} >
-                <h1>IDA'S KONSTBUTIK</h1>
+                <h1>IDAS KONSTBUTIK</h1>
                 
             </Link>
             
