@@ -25,7 +25,7 @@ export default function Nav() {
 
 
             <NavItems>
-            <User />
+            {/* <User /> */}
                 <div onClick={() => setShowCart(true)}>
                     {totalQuantities > 0 && <motion.span animate={{ scale: 1 }} initial={{ scale: 0 }}>{totalQuantities}</motion.span>}
                     <FiShoppingBag />

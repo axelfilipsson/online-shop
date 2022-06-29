@@ -6,4 +6,6 @@ export const Gallery = styled.div`
     grid-gap: 2rem;
 
 
+
+ 
 `

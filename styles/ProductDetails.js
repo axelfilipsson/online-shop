@@ -9,10 +9,28 @@ export const DetailsStyle = styled(motion.div)`
   img {
     width: 40%;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    display: table-row;
+  justify-content: center;
+  margin-top: 3rem;
+  img {
+    width:100%;
+  }
+
+    }
+
 `;
 
 export const ProductInfo = styled.div`
+
+
   width: 40%;
+
+  @media only screen and (max-width: 600px) {  width: 100%;
+    margin-top: 1rem;
+}
   button {
     font-size: 1rem;
     font-weight: medium;
@@ -26,6 +44,11 @@ export const Quantity = styled.div`
   align-items: center;
   margin: 1rem 0rem;
 
+  @media only screen and (max-width: 600px) {  width: 100%;
+    margin-top: 2rem;
+}
+
+  
   button {
     background: transparent;
     border: none;

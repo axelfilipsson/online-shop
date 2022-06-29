@@ -54,18 +54,27 @@ export default function Success({ order }) {
 const Wrapper = styled.div`
   margin: 4rem 0rem;
  
-
+  @media only screen and (max-width: 600px) {
+    margin: 0rem 0rem;
+}
 `;
 
 
 
 const Card = styled(motion.div)`
+
   display: flex;
   flex-direction: column;
   align-items: center;
   background: white;
   border-radius: 2rem;
   padding: 3rem 3rem;
+
+@media only screen and (max-width: 600px) {
+  padding: 0rem 1rem;
+  text-align: center;
+
+}
 
 
 
@@ -88,6 +97,10 @@ const Card = styled(motion.div)`
     border: none;
     width: 20rem;
     cursor: pointer;
+    @media only screen and (max-width: 600px) {
+      width: 16rem;
+}
+    
   }
 `;
 const Address = styled.div`

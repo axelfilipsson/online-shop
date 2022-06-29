@@ -17,6 +17,12 @@ h1{
 }
 
 
+@media only screen and (max-width: 600px) {
+
+   margin-bottom: 0rem;
+margin-top: 0rem;
+}
+
 `
 
 export const NavItems = styled.div`

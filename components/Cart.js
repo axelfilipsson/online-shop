@@ -97,7 +97,7 @@ export default function Cart() {
                 {cartItems.length >= 1 && (
                     <Checkout layout>
                         <h3>
-                            total: {totalPrice} SEK
+                            Totalt: {totalPrice} SEK
                         </h3>
                         <button onClick={handleCheckout}>
                          Köp

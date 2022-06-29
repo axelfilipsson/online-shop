@@ -12,15 +12,20 @@ export const CartWrapper = styled(motion.div)`
   z-index: 100;
   display: flex;
   justify-content: flex-end;
+  
 `;
 
 export const CartStyle = styled(motion.div)`
-  width: 30%;
+  width:30%;
   background: #f1f1f1;
   padding: 2rem 2rem;
   overflow-y: scroll;
   position: relative;
-
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+    padding: 1rem 1rem;
+ 
+}
 
 `;
 
@@ -31,8 +36,15 @@ export const Card = styled(motion.div)`
   border-radius: 1rem;
   overflow: hidden;
   background: white;
-  padding: 2rem;
+  padding: 0rem;
   margin: 2rem 0rem;
+
+  @media only screen and (max-width: 600px) {
+  height: 8rem;
+  margin: 1rem 0rem;
+  width:100%;;
+  }
+
   span{
     margin-right: 0.2rem;
   }
@@ -43,31 +55,46 @@ export const Card = styled(motion.div)`
   }
 
   img {
-        width: 6rem;
+        width:8rem;
   }
 `;
 
 export const CardInfo = styled(motion.div)`
-  width: 50%;
-  div {
+
+
+div {
+    margin-right: 2rem;
     display: flex;
     justify-content: space-between;
   }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin: 1rem;
+    margin-top:2.5rem;
+
+    div {
+
+        justify-content: left;
+      }
+
+    }
+
+  
+  
 `;
 
 export const EmptyStyle = styled(motion.div)`
 
-  position: absolute;
-  top: 0;
-  transform: translate(-50%, 0%);
+
+
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align:center;
+  align-items: center;
   height: 100%;
-  width: 80%;
-  padding: 30px;
+  flex-direction: column;
+
   svg {
     margin-top: 2rem;
     font-size: 5rem;
@@ -76,6 +103,7 @@ export const EmptyStyle = styled(motion.div)`
 `;
 
 export const Checkout = styled(motion.div)`
+
   button {
     background: var(--primary);
     padding: 1rem 2rem;
@@ -84,7 +112,17 @@ export const Checkout = styled(motion.div)`
     margin-top: 2rem;
     cursor: pointer;
     border: none;
+  
   }
+  @media only screen and (max-width: 600px) {  width: 100%;
+   button {
+  
+    margin-top: 1rem;
+   
+  
+  }
+    margin-top: 1rem;
+}
 `;
 
 
